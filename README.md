@@ -3,16 +3,22 @@ andbox Package Installer
 A Node.js script that programmatically installs packages into an isolated sandbox folder with deterministic package-lock.json and verifies the installed tree checksum.
 
 Features
+
 ✅ Isolated Installation: Creates isolated node_modules in ./sandbox
+
 ✅ Deterministic Lockfile: Generates consistent package-lock.json
+
 ✅ Tree Verification: Generates and verifies SHA256 checksums
+
 ✅ Programmatic Control: Full npm CLI integration
+
 ✅ Version Specific: Install exact package versions
 Requirements
 Node.js 18.0.0+
 npm (comes with Node.js)
 Usage
 Basic Usage
+
 import { SandboxInstaller } from './sandbox-installer.js';
 
 const installer = new SandboxInstaller();
@@ -21,7 +27,9 @@ const result = await installer.install('lodash', '4.17.21');
 if (result.success) {
   console.log(`Installed with checksum: ${result.checksum}`);
 }
+
 Command Line Usage
+
 # Run the main script (installs test packages)
 node sandbox-installer.js
 
