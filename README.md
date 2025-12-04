@@ -1,5 +1,5 @@
 # Practical-8
-andbox Package Installer
+Sandbox Package Installer
 A Node.js script that programmatically installs packages into an isolated sandbox folder with deterministic package-lock.json and verifies the installed tree checksum.
 
 Features
